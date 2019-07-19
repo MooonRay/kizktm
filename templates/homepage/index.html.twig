@@ -1,20 +1,65 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello HomepageController!{% endblock %}
-
+{% block title %}Hello Bulma!{% endblock %}
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ '/home/cow/kizktm/src/Controller/HomepageController.php'|file_link(0) }}">src/Controller/HomepageController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/home/cow/kizktm/templates/homepage/index.html.twig'|file_link(0) }}">templates/homepage/index.html.twig</a></code></li>
-    </ul>
+<div class ="section">
+    <div class = "container">
+        <div class="content">
+            <h1>Привет, {{ project_name }}! ✅</h1>
+            <p>В этом месте будет размещен вступительный текст, посвященный торговой марке.</p>
+            <p>Lorem ipsum {{ mename }} dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        </div>
+        <div class="content">
+            <p>Lorem ipsum {{ mename }} dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        </div>
+    </div>
 </div>
+<div class ="section">
+    <div class = "container">
+        <div class="content">
+            <h2>Знакомьтесь: основные продуктовые направления</h2>
+            <p>В этом месте будет размещен текст, посвященный продуктовым направлениям.</p>
+            <p>Lorem ipsum {{ mename }} dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            <p>А еще здесь будут представлены красивые слайды, демонстрирующие нашу продуктовую направленность (цельномолочная продукция, мороженое, молочные лакомства). Их цель - побудить посетителя пройти к следующей странице, где он увидит список категорий нашей продукции.</p>
+        </div>
+    </div>
+</div>
+
+
+<div class ="section">
+    <div class = "container">
+        <div class="content">
+            <h2>Мороженое</h2>
+            <p>В этом месте будет размещен текст, посвященный мороженому.</p>
+            <p>Lorem ipsum {{ mename }} dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        </div>
+    </div>
+</div>
+
+<div class ="section">
+    <div class = "container">
+        <div class="content">
+            <h2>Цельномолочная продукция</h2>
+            <p>В этом месте будет размещен текст, посвященный цельномолдочной продукции.</p>
+            <p>Lorem ipsum {{ mename }} dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        </div>
+    </div>
+</div>
+
+<div class ="section">
+    <div class = "container">
+        <div class="content">
+            <h2>Молочные лакомства</h2>
+            <p>В этом месте будет размещен текст, посвященный молочным лакомствам.</p>
+            <p>Lorem ipsum {{ mename }} dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
+
+{% block javascripts %}
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 {% endblock %}
