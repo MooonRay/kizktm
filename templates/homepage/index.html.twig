@@ -1,63 +1,172 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello Bulma!{% endblock %}
 {% block body %}
 
-<div section class ="hero has-background-warning">
-    <div class = "container has-background-light is-outlined">
-        <div class="content has-background-success">
-            <h1>Привет, {{ project_name }}! ✅</h1>
-        </div>
-        <div class="content has-background-grey-lighter">
-            <p>В этом месте будет размещен вступительный текст, посвященный торговой марке.</p>
-            <p>Lorem ipsum {{ mename }} dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-        </div>
-        <div class="content">
-            <p>Lorem ipsum {{ mename }} dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-        </div>
-    </div>
-</div>
-<div class ="section">
-    <div class = "container">
-        <div class="content">
-            <h2>Знакомьтесь: основные продуктовые направления</h2>
-            <p>В этом месте будет размещен текст, посвященный продуктовым направлениям.</p>
-            <p>Lorem ipsum {{ mename }} dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-            <p>А еще здесь будут представлены красивые слайды, демонстрирующие нашу продуктовую направленность (цельномолочная продукция, мороженое, молочные лакомства). Их цель - побудить посетителя пройти к следующей странице, где он увидит список категорий нашей продукции.</p>
+<!--ТЕЛО: 1. ТОРГОВАЯ МАРКА -->
+
+    <div class="section columns has-background-white-bis">
+        <div class="column is-8 is-offset-2 has-background-white-bis">
+            <div class="container">
+                <p class="title is-1 has-text-centered">Знакомьтесь: Коровка&nbspиз&nbspКореновки</p>
+                <p>Здесь будет размещен вступительный текст, посвященный торговой марке. Он займет не одну строку, особенно если уменьшить размер страницы по горизонтали. А еще сюда войдут красивые картинки о вкусной и здоровой пище, например такие как эта.</p>
+                <div class="box has-background-white-ter">
+                    <p><img src="/images/img18.png"></p>
+                </div>
+                <p>Если вы заметили, что не все продукты на снимке в действительности принадлежат Коровке, то будете правы. Здесь действительно есть кое-что от Алексеевского. Дело в том, что эта страница не настоящая. Она представляет всего лишь демонстрационную модель, по которой настоящие художники и писатели подготовят реальные тексты и картинки для сайта.</p>
+            </div>
         </div>
     </div>
-</div>
+
+    <div class="level columns has-background-white-ter">
+        <div class="comtainer column is-4 is-offset-7 has-background-white-ter">
+             <span class="icon">
+                 <i class="fas fa-quote-left"></i>
+             </span>
+             <span>
+                  <span class="has-text-danger"> Это очень важный элемент!</span> Он предназначен для динамического представления отзывов от наших покупателей... (см. ниже)
+             </span>
+        </div>
+        <div class="container column is-1 has-background-white-ter">
+            <span class="icon ">
+                <i class="far fa-envelope-open is-size-3"></i>
+            </span>
+        </div>
+    </div>
+
+<!-- ТЕЛО 2. ОСНОВНЫЕ НАПРАВЛЕНИЯ. ПЛИТКА -->
+
+    <div class="section columns has-background-white-bis">
+        <div class="column is-8 is-offset-2 has-background-white-bis">
+            <p class="title">Коровкины продукты</p>
+            <p>Здесь будет размещен краткий вступительный очерк, представляющий продукты от Коровки. Их характерной особенностью является то, что все они изготовлены из молока, произведенного на Кубани. Кубань - это два южных моря, чистый воздух, теплый климат, близкие горы, урожайные земли и много солнечных дней в году. В таких редких природных условиях на свет появляется удивительное молоко. А труженики этой благодатной земли превращают его в замечательные молочные продукты</p>
+
+            <div class="tile is-ancestor">
+                <div class="tile">
+                    <div class="tile is-parent is-8">
+                        <article class="tile is-child box  has-background-white-bis">
+                            <p class="title">Мороженое</p>
+                            <p class="subtitle">Тот самый вкус</p>
+                            <figure>
+                                <img src="/images/img2.png">
+                            </figure>
+                            <p>По каждому продукту копирайтер может добавить несколько проникновенных фраз, чтобы брали за душу и подталкивали нажать на кнопку.</p>
+                        </article>
+
+                    </div>
+                    <div class="tile is-parent">
+                        <article class="tile is-child box has-background-white-bis">
+                            <p class="title">Мягкий шоколад</p>
+                            <p class="subtitle">Без растительных жиров</p>
+                            <figure>
+                                <img src="/images/img4.png">
+                            </figure>
+                            <p class="icon">
+                                    <i class="fas fa-quote-left"></i>
+                            </p>
+                            <p>Вкусно. Удобно. Шоколадно.</p>
+                            <span class="icon">
+                                    <i class="fas fa-quote-right"></i>
+                            </span>
+                            <p>(Из книги отзывов)</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="level columns has-background-white-ter">
+        <div class="comtainer column is-4 is-offset-7 has-background-white-ter">
+             <span class="icon">
+                 <i class="fas fa-quote-left"></i>
+             </span>
+            <span>
+                  ... Здесь представляются первые строки клиентского письма. Все письмо можно развернуть в отдельном окне щелчком на значке конверта...
+             </span>
+        </div>
+        <div class="container column is-1 has-background-white-ter">
+            <span class="icon ">
+                <i class="far fa-envelope-open is-size-3"></i>
+            </span>
+        </div>
+    </div>
+
+    <div class="section columns has-background-white-bis">
+        <div class="column is-8 is-offset-2 has-background-white-bis">
+            <div class="tile is-ancestor">
+                <div class="tile is-4 is-parent">
+                    <article class="tile is-child box has-background-white-bis">
+                        <p class="title">Молонез</p>
+                        <p class="subtitle">Вкусное должно быть полезным</p>
+                        <figure>
+                            <img src="/images/img3.png">
+                        </figure>
+                        <p>Белый густой термостатный соус со вкусом майонеза и пользой молока</p>
+                    </article>
+                </div>
+                <div class="tile is-8 is-parent">
+                    <article class="tile is-child box has-background-white-bis">
+                        <p class="title">Молочные лакомства</p>
+                        <p class="subtitle">Нам есть чем гордиться!</p>
+                        <div class="level">
+                            <div class="level-item">
+                                <img src="/images/img21.png" width="300" height="300">
+                            </div>
+                        </div>
+                        <p>Продукт, который не нуждается в представлении. Многократный победитель конкурсов, призер международных выставок, торжественный участник телевизионных шоу.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="level columns has-background-white-ter">
+        <div class="comtainer column is-4 is-offset-7 has-background-white-ter">
+             <span class="icon">
+                 <i class="fas fa-quote-left"></i>
+             </span>
+            <span>
+                  ... Дизайнер может обыграть это элемент по-разному. Для нас важно, чтобы (а) этот элемент был и (б) чтобы он был вполне очевиден (его не надо искать).
+             </span>
+        </div>
+        <div class="container column is-1 has-background-white-ter">
+            <span class="icon ">
+                <i class="far fa-envelope-open is-size-3"></i>
+            </span>
+        </div>
+    </div>
 
 
-<div class ="section">
-    <div class = "container">
-        <div class="content">
-            <h2>Мороженое</h2>
-            <p>В этом месте будет размещен текст, посвященный мороженому.</p>
-            <p>Lorem ipsum {{ mename }} dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-        </div>
-    </div>
-</div>
+    <div class="section columns has-background-white-bis">
+        <div class="column is-8 is-offset-2 has-background-white-bis">
+            <div class="tile is-ancestor">
+                <div class="tile">
+                    <div class="tile is-parent is-8">
+                        <article class="tile is-child box  has-background-white-bis">
+                            <p class="title">Цельномолочные продукты</p>
+                            <p class="subtitle">Свое, родное, настоящее!</p>
+                            <figure>
+                                <img src="/images/img5.png">
+                            </figure>
+                            <p>Для перехода на страницу продуктовой категории/линейки, надо щелкнуть на картинке или на заголовке. Однако возможно, что дизайнер титульной страницы решит использовать специально отрисованную кнопку перехода. Ему виднее.</p>
+                        </article>
 
-<div class ="section">
-    <div class = "container">
-        <div class="content">
-            <h2>Цельномолочная продукция</h2>
-            <p>В этом месте будет размещен текст, посвященный цельномолдочной продукции.</p>
-            <p>Lorem ipsum {{ mename }} dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-        </div>
-    </div>
-</div>
 
-<div class ="section">
-    <div class = "container">
-        <div class="content">
-            <h2>Молочные лакомства</h2>
-            <p>В этом месте будет размещен текст, посвященный молочным лакомствам.</p>
-            <p>Lorem ipsum {{ mename }} dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                    </div>
+                    <div class="tile is-parent">
+                        <article class="tile is-child box has-background-white-bis">
+                            <p class="title">Чизби</p>
+                            <p class="subtitle">Только разогреть</p>
+                            <figure>
+                                <img src="/images/img1.png" width="200" height="200">
+                                <img src="/images/img6.png" width="200" height="200">
+                            </figure>
+                        </article>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
 
 
 {% endblock %}

@@ -1,0 +1,26 @@
+/* HEADER */
+
+.topkizk {
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1.5rem;
+    padding: 1.5rem;
+    background-color: whitesmoke;
+}
+/*    height: 10rem ; */
+
+.kizknavbar {
+    background-color: white;
+    min-height: 220px;
+    position: relative;
+    z-index: 30;
+}
+
+.myfooter {
+    text-align: center;
+    color: #dc3545;
+    margin-top: -13%;
+
+}

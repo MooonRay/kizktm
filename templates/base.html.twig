@@ -1,15 +1,112 @@
 <!DOCTYPE html>
 <html>
+
+<!---------------- HEAD----------->
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{% block title %}{% endblock %}</title>
-        <!---->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
-        <!-- -->
+        <title>{% block title %}Коровка из Кореновки{% endblock %}</title>
+
+        <link rel="stylesheet" href="/css/kizk.css">
+        <link rel="stylesheet" href="/css/mykizk.css">
     </head>
+
+<!------------------BASIC BODY ----------->
+
     <body>
-        {% block body %}{% endblock %}
+
+
+<!-------------------NAVBAR--------------->
+
+    <nav class="navbar has-background-white-ter" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/homepage">
+                <img src="/images/logo.png" width="150" height="150">
+            </a>
+
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                </a>
+        </div>
+
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-item navbar-link">
+                        ПРОДУКТЫ
+                    </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">
+                            Мороженое
+                        </a>
+                        <a class="navbar-item">
+                            Цельномолочные продукты
+                        </a>
+                        <a class="navbar-item">
+                            Молочные лакомства
+                        </a>
+                        <a class="navbar-item">
+                            Молонез
+                        </a>
+                        <a class="navbar-item">
+                            Чизби
+                        </a>
+                        <a class="navbar-item">
+                            Мягкий шоколад
+                        </a>
+                    </div>
+               </div>
+
+                    <a class="navbar-item">
+                        КОНТАКТЫ
+                    </a>
+
+                    <a class="navbar-item">
+                        ОБРАТНАЯ СВЯЗЬ
+                    </a>
+
+                    <a class="navbar-link is-arrowless">
+                        НОВОСТИ
+                    </a>
+                </div>
+            </div>
+
+
+                <div class="navbar-item">
+                    <div class="panel has-background-link">
+                        <div class="panel-block">
+                            <a class="button has-text-white-ter has-background-link is-small is-fullwidth">
+                                <span class="icon is-small">
+                                    <i class="fab fa-sistrix"></i>
+                                </span>
+                                <span>
+                                    <strong>Поиск продукта</strong>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+    </nav>
+
+    {% block body %}{% endblock %}
+
+    {% block footer %}
+
+         <footer>
+                <div class="box has-text-centered has-background-white-ter">
+                    <img src="{{ asset('images/footer1.png') }}">
+                    <p class ="myfooter">Copyright ЗАО "РЕННА-Холдинг" 2003-2019 гг.</p>
+                    <a>https://www.renna.ru</a>
+                </div>
+         </footer>
+
+        {% endblock %}
+
         {% block javascripts %}{% endblock %}
     </body>
 </html>

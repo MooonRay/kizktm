@@ -14,7 +14,6 @@ class HomepageController extends AbstractController
     {
         return $this->render('homepage/index.html.twig', [
             'project_name' => 'Коровка из Кореновки',
-            'mename' => 'Эксперимент',
         ]);
     }
 }
