@@ -1,5 +1,19 @@
 /* HEADER */
 
+body {
+    font-family: PT Serif;
+}
+
+h1, h2, h3, h4, h5, h6, h7 {
+    font-family: 'PT Serif Caption', serif;
+}
+
+.navbar-item {
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+
+
 .topkizk {
     align-items: stretch;
     display: flex;
@@ -23,4 +37,21 @@
     color: #dc3545;
     margin-top: -13%;
 
+
+
+
+
+.p {
+    font-family: 'PT Serif', serif;
+}
+body {
+    font-family: 'PT Serif', serif;
+}
+
+.h1{
+    font-family: 'PT Serif Caption', serif;
+}
+.h2{
+    font-family: 'PT Sans Narrow', sans-serif;
+}
 }

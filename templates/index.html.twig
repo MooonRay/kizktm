@@ -1,0 +1,137 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<!--Раздел: 1. О бренде + Отзывы -->
+
+    <div class="section columns has-background-white-bis">
+        <div class="column is-8 is-offset-2 has-background-white-bis">
+            <div class="tile is-ancestor">
+                <div class="tile">
+                    <div class="tile is-parent is-7">
+                        <article class="tile is-child box has-background-white-bis has-shadow ">
+                            <p class="title">О бренде</p>
+                            <p class="subtitle">Здесь будет девиз бренда</p>
+
+                                <img src="/images/img2.png" height="200px">
+                        </article>
+                    </div>
+                    <div class="tile is-parent is-5">
+                        <article class="tile is-child box has-background-white-bis">
+                            <p class="title">Отзывы</p>
+                            <p class="subtitle">Высшая из наград</p>
+                            <figure>
+                                <img src="/images/img4.png" height="200px">
+                            </figure>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Раздел 2. Новинки, Продукты, Производство -->
+
+    <div class="section columns has-background-white-bis">
+        <div class="column is-8 is-offset-2 has-background-white-bis">
+            <div class="tile is-ancestor">
+                <div class="tile">
+                    <div class="tile is-parent is-4">
+                        <article class="tile is-child box  has-background-white-bis">
+                            <p class="title">Новинки</p>
+                            <p class="subtitle">Расширяем ассортимент</p>
+                            <figure>
+                                <img src="/images/img2.png">
+                            </figure>
+                        </article>
+                    </div>
+                    <div class="tile is-parent is-4">
+                        <article class="tile is-child box has-background-white-bis">
+                            <p class="title">Продукты</p>
+                            <p class="subtitle">Каталог от Коровки</p>
+                            <figure>
+                                <img src="/images/img4.png">
+                            </figure>
+                        </article>
+                    </div>
+                    <div class="tile is-parent is-4">
+                        <article class="tile is-child box has-background-white-bis">
+                            <p class="title">Производство</p>
+                            <p class="subtitle">Коровкины альбомы</p>
+                            <figure>
+                                <img src="/images/img4.png">
+                            </figure>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="level columns has-background-white-ter">
+        <div class="comtainer column is-4 is-offset-7 has-background-white-ter">
+             <span class="icon">
+                 <i class="fas fa-quote-left"></i>
+             </span>
+            <span>
+                  Этот элемент предназначен для динамического представления отзывов.
+             </span>
+        </div>
+        <div class="container column is-1 has-background-white-ter">
+            <span class="icon ">
+                <i class="far fa-envelope-open is-size-3"></i>
+            </span>
+        </div>
+    </div>
+
+
+    <!-- Раздел 3. Новости, Обратная связь, Контакты -->
+
+    <div class="section columns has-background-white-bis">
+        <div class="column is-8 is-offset-2 has-background-white-bis">
+            <div class="tile is-ancestor">
+                <div class="tile is-4 is-parent">
+                    <article class="tile is-child box has-background-white-bis">
+                        <p class="title">Новости</p>
+                        <p class="subtitle">Коровка в стране и обществе</p>
+                        <figure>
+                            <img src="/images/img3.png">
+                        </figure>
+                        <p>Здесь будет необходимый анонс</p>
+                    </article>
+                </div>
+                <div class="tile is-4 is-parent">
+                    <article class="tile is-child box has-background-white-bis">
+                        <p class="title">Обратная связь</p>
+                        <p class="subtitle">Поддержите нас</p>
+                        <div class="level">
+                            <div class="level-item">
+                                <img src="/images/img21.png" width="200" height="200">
+                            </div>
+                        </div>
+                        <p>Продукт, который не нуждается в представлении. Многократный победитель конкурсов, призер международных выставок, торжественный участник телевизионных шоу.</p>
+                    </article>
+                </div>
+                <div class="tile is-4 is-parent">
+                    <article class="tile is-child box has-background-white-bis">
+                        <p class="title">Контакты</p>
+                        <p class="subtitle">Как с нами связаться</p>
+                        <div class="level">
+                            <div class="level-item">
+                                <img src="/images/img21.png" width="200" height="200">
+                            </div>
+                        </div>
+                        <p>Продукт, который не нуждается в представлении. Многократный победитель конкурсов, призер международных выставок, торжественный участник телевизионных шоу.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
+
+{% block javascripts %}
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+{% endblock %}

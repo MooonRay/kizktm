@@ -7,7 +7,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{% block title %}Коровка из Кореновки{% endblock %}</title>
-
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow|PT+Serif|PT+Serif+Caption&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/css/kizk.css">
         <link rel="stylesheet" href="/css/mykizk.css">
     </head>
@@ -21,7 +21,7 @@
 
     <nav class="navbar has-background-white-ter" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-            <a class="navbar-item" href="/homepage">
+            <a class="navbar-item" href="/">
                 <img src="/images/logo.png" width="150" height="150">
             </a>
 
@@ -29,52 +29,41 @@
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
-                </a>
+            </a>
         </div>
 
         <div class="navbar-menu">
             <div class="navbar-start">
-                <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-item navbar-link">
+                <a class="navbar-item">
+                    О БРЕНДЕ
+                </a>
+                <div class="navbar-item has-dropdown navbar-link is-hoverable">
+                    <a class="navbar-item">
                         ПРОДУКТЫ
                     </a>
                     <div class="navbar-dropdown">
-                        <a class="navbar-item">
-                            Мороженое
-                        </a>
-                        <a class="navbar-item">
-                            Цельномолочные продукты
-                        </a>
-                        <a class="navbar-item">
-                            Молочные лакомства
-                        </a>
-                        <a class="navbar-item">
-                            Молонез
-                        </a>
-                        <a class="navbar-item">
-                            Чизби
-                        </a>
-                        <a class="navbar-item">
-                            Мягкий шоколад
-                        </a>
+                        <a class="navbar-item">Мороженое</a>
+                        <a class="navbar-item">Цельномолочные продукты</a>
+                        <a class="navbar-item">Молочные лакомства</a>
+                        <a class="navbar-item">Молонез</a>
+                        <a class="navbar-item">Чизби</a>
+                        <a class="navbar-item">Мягкий шоколад</a>
                     </div>
-               </div>
-
+                </div>
+                <a class="navbar-item">ПРОИЗВОДСТВО</a>
+                <div class="navbar-item navbar-link has-dropdown is-hoverable">
                     <a class="navbar-item">
-                        КОНТАКТЫ
+                        ЕЩЁ
                     </a>
-
-                    <a class="navbar-item">
-                        ОБРАТНАЯ СВЯЗЬ
-                    </a>
-
-                    <a class="navbar-link is-arrowless">
-                        НОВОСТИ
-                    </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">Отзывы</a>
+                        <a class="navbar-item">Новости</a>
+                        <a class="navbar-item">Контакты</a>
+                    </div>
                 </div>
             </div>
 
-
+            <div class="navbar-end">
                 <div class="navbar-item">
                     <div class="panel has-background-link">
                         <div class="panel-block">
@@ -89,7 +78,7 @@
                         </div>
                     </div>
                 </div>
-
+            </div>
         </div>
     </nav>
 
