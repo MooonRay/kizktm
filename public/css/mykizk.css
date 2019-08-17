@@ -40,6 +40,11 @@ p+.tile.is-ancestor{
 ----------------------------------------------------------------------------
  */
 
+.media-right{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
 .subtitle {
     color: #4a4a4a;
     font-size: 1.5rem;
@@ -54,7 +59,14 @@ p+.tile.is-ancestor{
     font-style: italic;
     font-family: 'PT Serif', serif;
     font-size: 1.2rem;
-    color: #4b46dc;
+    color: #4a4a4a;
+}
+
+.letterlink{
+    font-style: italic;
+    font-family: 'PT Serif', serif;
+    font-size: 1.2rem;
+    color: blue;
 }
 
 
