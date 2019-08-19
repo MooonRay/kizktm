@@ -45,6 +45,12 @@ p+.tile.is-ancestor{
     margin-bottom: auto;
 }
 
+.imgcent{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 .subtitle {
     color: #4a4a4a;
     font-size: 1.5rem;
@@ -62,13 +68,37 @@ p+.tile.is-ancestor{
     color: #4a4a4a;
 }
 
+.sku{
+    font-weight: 600;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1.3rem;
+    color: #4a4a4a;
+    text-transform: uppercase;
+}
+
+.parameters{
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1.2rem;
+    color: #4a4a4a;
+}
+
+
 .letterlink{
     font-style: italic;
     font-family: 'PT Serif', serif;
     font-size: 1.2rem;
-    color: blue;
+    color: #4a4a4a;
 }
 
+.subfigure{
+    font-style: italic;
+    font-family: 'PT Serif', serif;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 600;
+}
 
 .navbar-dropdown{
     margin-top: -50px;
@@ -102,6 +132,34 @@ p+.tile.is-ancestor{
     margin-top: -13%;
 }
 
+/* КАРТОЧКА ПРОДУКТА */
+
+.sostav{
+    font-style: normal;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1.2rem;
+    text-align: left;
+    font-weight: 400;
+    line-height: 1.3rem;
+}
+
+.sku-parameters{
+    font-weight: 400;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1.4rem;
+    color: #4a4a4a;
+}
+
+.sku-parameters-strong{
+    font-weight: 600;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1.4rem;
+    color: #4a4a4a;
+}
+
+.shift{
+    padding-left: 3.0rem;
+}
 
 /* НА ПАМЯТЬ
 -----------------------------------------------------------------------------------------------

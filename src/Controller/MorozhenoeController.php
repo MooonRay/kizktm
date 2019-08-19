@@ -10,7 +10,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class MorozhenoeController extends AbstractController
 {
     /**
-     * @Route("/morozhenoe", name="morozhenoe")
+     * @Route("/producty/morozhenoe", name="morozhenoe")
      */
     public function morozhenoe()
     {
