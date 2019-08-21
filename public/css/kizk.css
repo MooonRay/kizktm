@@ -5723,7 +5723,7 @@ button.dropdown-item.is-active {
   flex-grow: 1;
 }
 
-@media screen and (min-width: 769px), print {
+@media screen and (min-width: 480px), print {
   .level {
     display: flex;
   }
@@ -5902,7 +5902,7 @@ a.list-item {
 
 @media screen and (max-width: 768px) {
   .media-content {
-    overflow-x: auto;
+//    overflow-x: auto;
   }
 }
 

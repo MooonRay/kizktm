@@ -60,6 +60,10 @@ p+.tile.is-ancestor{
 
 }
 
+.icon{
+    padding-left: 10px;
+    padding-right: 20px;
+}
 
 .letter{
     font-style: italic;
